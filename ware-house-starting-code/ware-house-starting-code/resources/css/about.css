@@ -1,0 +1,90 @@
+/* About Page */
+
+.about h1 {
+  width: 100%;
+  padding: 10.5rem 0;
+  background-image: url('../img/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 48px;
+  letter-spacing: 5px;
+  color: hsla(0, 100%, 100%, 1);
+  font-family: 'Staatliches', cursive;
+}
+
+.information
+{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 5px;
+}
+
+.about .information {
+  padding: 3.75rem 20% 6.75rem 20%;
+  color: hsla(0, 0%, 29%, 1);
+}
+
+
+.about h3 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  margin-bottom: 1rem;
+  font-size: 30px;
+  padding-bottom: 1.5rem;
+}
+
+.about p {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  padding-bottom: 1rem;
+  font-size: inherit;
+  line-height: 1.9;
+
+}
+
+.about .join {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  justify-content: center;
+  padding: 1rem 20% 4rem 20%;
+  margin-top: 2rem;
+  border: solid 1px #e7e7e7;
+  border-radius: 2px;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.join a{
+  border-style: solid;
+  border-width: 5px 15px 5px 15px;
+  border-color: #c4565f;
+}
+
+.join a:hover{
+  border-style: solid;
+  border-width: 5px 15px 5px 15px;
+  border-color: #d37676;
+}
+
+
+@media only screen and (max-width: 735px) {
+  .about h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .about h1 {
+    font-size: 4rem;
+  }
+
+  .about h3 {
+    font-size: 1.25rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
